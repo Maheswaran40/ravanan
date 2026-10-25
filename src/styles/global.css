@@ -1,0 +1,54 @@
+
+@import "tailwindcss";
+
+@theme {
+  --color-background: #F8F9FC;
+  --color-surface: #FFFFFF;
+  --color-foreground: #171923;
+  --color-muted: #686D7A;
+  --color-accent: #465FFF;
+  --color-border: #E5E7EB;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #F8F9FC;
+  color: #171923;
+  overflow-x: hidden;
+}
+.home,.about,.contact,.skills,.experience,.skills,.project
+{
+    margin-top: 20px;
+}
+.horizontal-scroll-container {
+  height: 600vh;
+  position: relative;
+}
+
+.horizontal-viewport {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.horizontal-track {
+  display: flex;
+  width: max-content;
+  height: 100%;
+}
+
+.panel {
+  width: 100vw;
+  height: 100%;
+  flex: 0 0 100vw;
+  overflow: hidden;
+}
